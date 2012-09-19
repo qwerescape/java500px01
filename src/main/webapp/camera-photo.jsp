@@ -8,24 +8,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="<c:url value="/resource/bootstrap.min.css"/>" rel="stylesheet" type="text/css">
 <link href="<c:url value="/resource/camera-photo.css"/>" rel="stylesheet" type="text/css">
+<script src="<c:url value="/resource/ext-core.js"/>"></script>
+<script type="text/javascript">
+	photoJsonUrl = '<c:url value="/photos.json"/>';
+</script>
 <title>500px Camera</title>
 </head>
 <body id="main-page">
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
-			<p class="brand" style="color:white;margin-left:30px;">quality of photo vs quality of gear</p>
+			<p class="brand" style="color:white;margin-left:30px;">Better gear means better photos?</p>
 		</div>
 	</div>	
-	<div class="container">
-			<c:forEach items="${gearPhotosMap}" var="entry">
-		      	<c:forEach items="${entry.value }" var="url">
-		      		<div class="photo-container">
-		      			<div><a href="${url}"><img src="${url}"/></a></div>
-		      			<div class="gear">${entry.key.camera }</div>
-    				</div>
-    				</c:forEach>
-		    	
-		</c:forEach>
+	<div class="container" id="photo-container">
 	</div>
+	<div id="loading-mask"><p class="lead">Getting photos from 500px...</p><div class="progress progress-striped active">
+  <div class="bar" style="width: 100%;"></div>
+</div></div>
+<script src="<c:url value="/resource/camera-photo.js"/>"></script>
 </body>
 </html>

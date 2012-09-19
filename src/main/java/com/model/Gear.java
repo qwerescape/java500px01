@@ -1,6 +1,7 @@
 package com.model;
 
 public class Gear {
+	public Gear(){}
 	public Gear(String camera, String lens, float price) {
 		this.camera = camera;
 		this.lens = lens;
@@ -42,5 +43,10 @@ public class Gear {
 		} else if (!camera.equals(other.camera))
 			return false;
 		return true;
+	}
+	@Override
+	public String toString() {
+		return "{camera:" + camera + ", lens:" + lens + ", price:" + price
+				+ "}";
 	}
 }

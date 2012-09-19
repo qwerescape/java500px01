@@ -12,3 +12,6 @@
         font-size: 14px;
         color: #888;
         padding: 3px; }
+  #main-page #loading-mask {
+    width: 500px;
+    margin: 100px auto 0px auto; }
