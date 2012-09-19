@@ -18,11 +18,12 @@
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
 			<p class="brand" style="color:white;margin-left:30px;">Better gear means better photos?</p>
+			<p style="margin-top:10px;">-- photos taken from the top 100 fav'ed from the Editor's Choice pool of <a href="http://www.500px.com">500px</a></p> 
 		</div>
 	</div>	
 	<div class="container" id="photo-container">
 	</div>
-	<div id="loading-mask"><p class="lead">Getting photos from 500px...</p><div class="progress progress-striped active">
+	<div id="loading-mask"><p class="lead">Getting photos and camera from 500px...</p><div class="progress progress-striped active">
   <div class="bar" style="width: 100%;"></div>
 </div></div>
 <script src="<c:url value="/resource/camera-photo.js"/>"></script>
