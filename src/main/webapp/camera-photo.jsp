@@ -6,10 +6,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link href="<c:url value="/resource/bootstrap.min.css"/>" rel="stylesheet" type="text/css">
+<link href="<c:url value="/resource/camera-photo.css"/>" rel="stylesheet" type="text/css">
+<title>500px Camera</title>
 </head>
-<body>
-<h1>hello world</h1>
-<div>${jsonResult}</div>
+<body id="main-page">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<p class="brand" style="color:white;margin-left:30px;">quality of photo vs quality of gear</p>
+		</div>
+	</div>	
+	<div class="container">
+			<c:forEach items="${gearPhotosMap}" var="entry">
+		      	<c:forEach items="${entry.value }" var="url">
+		      		<div class="photo-container">
+		      			<div><a href="${url}"><img src="${url}"/></a></div>
+		      			<div class="gear">${entry.key.camera }</div>
+    				</div>
+    				</c:forEach>
+		    	
+		</c:forEach>
+	</div>
 </body>
 </html>

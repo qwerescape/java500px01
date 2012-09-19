@@ -1,0 +1,18 @@
+#main-page{
+	background-color: #D1D1D1;
+	.container{
+		width : 1200px;
+		margin: 60px auto 0px auto;
+		.photo-container{
+			box-shadow: 1px 1px 1px #000;
+			float:left;
+			margin:5px;
+			.gear{
+				background: white;
+				font-size : 17px;
+				color : #888;
+				padding:2px;
+			}
+		}
+	}
+}
