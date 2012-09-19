@@ -26,7 +26,7 @@ public class Five00pxRestClient {
 	public Five00pxRestClient(){
 		manyPhotoUrl = "https://api.500px.com/v1/photos?feature=editors&rpp=100&sort=favorites_count&consumer_key=";
 		onePhotoUrl = "https://api.500px.com/v1/photos/";
-		consumerKey = "RBxyyAJaspl3Lio0aEjvf4FUWBIRhziJ43rvBzFv";
+		consumerKey = "....";//get your own from 500px;
 		restTemplate = new RestTemplate();
 		
 	}
