@@ -12,10 +12,11 @@ Ext.onReady(function(){
 			   for (var i= 0; i < length; i++){
 				   var camera = photos[i].camera;
 				   var url = photos[i].image_url;
+				   var longUrl = 'http://www.500px.com/photo/'+photos[i].id;
 				   var html = String.format('<div class="photo-container">'+
-						   '<div><a href="{0}"><img src="{0}"/></a></div>'+
+						   '<div><a href="{2}"><img src="{0}"/></a></div>'+
 						   '<div class="gear">{1}</div>'+
-						   '</div>', url, camera);
+						   '</div>', url, camera, longUrl);
 				   
 				   Ext.DomHelper.append(container, html, false);
 			   }
